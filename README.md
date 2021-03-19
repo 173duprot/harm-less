@@ -4,4 +4,3 @@
 This Document is genarated by the unix tree command ``tree -v``
 >> The naming convention for each Topic is ``[TOPIC]``
 >> The naming convention for each File is ``(<sloc>)[tool name]``
-- 
