@@ -4,6 +4,6 @@ Inspired by suckless and cat-v, this is a simple single text document wiki of mi
 -- Each Topic is a folder [TOPIC]
 -- Each tool is a file (sloc count)[TOOL] - description
 
-This Document is genarated by the unix tree command ``tree -v`` in ./wiki
+This Document is genarated by running ./tree.sh on ./wiki
 
 ---------------------------------------------------------------------------------
