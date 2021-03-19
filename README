@@ -3,5 +3,5 @@ Inspired by suckless and cat-v, this is a simple single text document wiki of mi
 
 This Document is genarated by the unix tree command ``tree -v``
 
--- The naming convention for each Topic is [TOPIC]
--- The naming convention for each File is (sloc)[TOOL]
+-- Each Topic is a folder [TOPIC]
+-- Each tool is a file (sloc count)[TOOL]
