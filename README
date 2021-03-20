@@ -1,11 +1,55 @@
 /* --- harm-less ---*/
-Inspired by suckless and cat-v, this is a simple single text document wiki of minimal software.
+Inspired by suckless and cat-v, this is a simple single text document wiki of
+minimal software and suckless practices.
 
 -- Each Topic is a folder       [TOPIC]
 -- Each tool is a file          [TOOL]
--- Inside each file             - <sloc> - <description> - <link>
+-- Inside each file             ~ <description>
 
 This list is genarated using  tree.sh  on ./wiki
 
 ---------------------------------------------------------------------------------
-
+wiki
+├── programming
+│   ├── languages
+│   │   ├── C - fuck C++
+│   │   ├── Forth - More powerful and minimal than C, also more dangerous, good for embedded
+│   │   ├── Python - Good for scripting, not for applications
+│   │   └── Rust - better C++ alternative
+│   └── text-manupulation
+│       ├── core-utils - awk, sed, cat, tail, etc.
+│       └── python - like I said, scripting. Shell is better but python aint that bad.
+├── system
+│   ├── core-utils
+│   │   ├── busybox - tiny versions of many common UNIX utilities into a single small embedded executable
+│   │   └── plan9-coreutils - The most minimal you can get, everything is only a couple lines of C. Best of the best.
+│   ├── display-server
+│   │   ├── swc - The smallest display server you will ever get. Wayland compositor in 10k sloc.
+│   │   └── wlroots - bloat, but nowhere near as bad as Xorg.
+│   ├── init
+│   │   ├── OpenRC - Bit bloated, but by far the most popular of the init's here.
+│   │   ├── busybox - busybox has a good minimal embedded init system.
+│   │   ├── runit - ungodly small init scheme, very powerful
+│   │   └── sinit - The suckless init system
+│   ├── os
+│   │   ├── Alpine - A very popular just-works embedded linux build around musl libc and busybox.
+│   │   ├── Gentoo - The most popular distro here, source based, can be made suckless.
+│   │   ├── Glaucus - Brand new bleeding-edge linux built round musl libc and toybox.
+│   │   ├── KISS - Kiss linux is new, decently well known, and ungodly simple. Links hard to find k1sslinux.org
+│   │   ├── Oasis - manual-bootstrapped, statically compiled incredibly simple source-based linux.
+│   │   ├── OpenBSD - Very clean codebase, very simple, very secure, smallst kernal
+│   │   ├── Sabotage - Manual bootstrapped ultraminimal source-based static linux.
+│   │   ├── minix - The simpelest embedded microkernal os possible, powers the IME in intel chips.
+│   │   └── plan9 - (or 9front) The most minimal of all, Only use if you are a full autismo.
+│   └── terminal
+│       ├── emulator
+│       │   ├── st - the suckless terminal emulator. Tiny, easy to understand, customizable, perfect.
+│       │   └── termite - Almost as minimal as st, less hackable, more user-freindly.
+│       └── multiplexer
+│           ├── dvtm-abduco - better tmux, tiny minimal terminal multiplexing, emulates DWM in the tty.
+│           └── tmux - a bit bloated, but ungodly popular.
+└── torrenting
+    ├── clients
+    │   ├── aria2 - lightweight multi-protocol download utility
+    │   ├── btpd - The BitTorrent Protocol Daemon
+    │   ├── ctorrent - lightwei

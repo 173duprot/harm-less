@@ -17,6 +17,7 @@ traverse() {
   for idx in "${!children[@]}"; do
     local child=${children[$idx]// /\\ }
     child=${child##*/}
+    dash=""
 
     local child_prefix="│   "
     local pointer="├── "
@@ -26,7 +27,11 @@ traverse() {
       child_prefix="    "
     fi
 
-    echo "${prefix}${pointer}$child $(cat "$directory/$child")"
+    if [ -f "$directory/$child" ]; then
+        dash="-";
+    fi
+
+    echo "${prefix}${pointer}${child} ${dash} $(cat "$directory/$child")"
     [ -d "$directory/$child" ] &&
       traverse "$directory/$child" "${prefix}$child_prefix" ||
       file_count=$((file_count + 1))
