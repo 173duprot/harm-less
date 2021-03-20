@@ -11,49 +11,95 @@ This list is genarated using  tree.sh  on ./wiki
 ---------------------------------------------------------------------------------
 
 applications
-└── media
-    └── torrenting
-        ├── clients
-        │   ├── aria2 - lightweight multi-protocol download utility
-        │   ├── btpd - The BitTorrent Protocol Daemon
-        │   ├── ctorrent - lightweight torrent client [unmaintained]
-        │   └── lftp - simple command line file transfer program
-        └── trackers
+├── media
+│   └── torrenting
+│       └── clients
+│           ├── aria2 - lightweight multi-protocol download utility
+│           ├── btpd - The BitTorrent Protocol Daemon
+│           ├── ctorrent - lightweight torrent client [unmaintained]
+│           └── lftp - simple command line file transfer program
+└── utilities
+    ├── databases
+    │   ├── TinyCBD - Fast simple constant compiled database genarator and interface.
+    │   ├── lmdb - high-performance, mmap'd key-value store used in the OpenLDAP project.
+    │   ├── ndb - Plan9's database genarator, tiny, and super powerful.
+    │   └── recutils - set of tools and libraries to access human-editable, plain text databases.
+    ├── files
+    │   ├── file-management
+    │   │   ├── broot - bloated, not a file manager, not the tree command - extensable file control and navigation.
+    │   │   ├── lf - bloated, terminal file manager written in Go, inspired by ranger
+    │   │   ├── noice - 1k sloc small extensable file browser
+    │   │   ├── rover - 2k sloc, perfect tiny file browser.
+    │   │   └── unix-utils - ls, cp, mv, etc.
+    │   └── search
+    │       ├── find - Unix core utility, minimal, efficent, tiny portable, most minimal of all of these.
+    │       ├── fzy - 1/10th the code of fzf, fuck fzf, this is just as fast, just as amazing.
+    │       ├── go-fuzzyfinder - minimal, easy, fast, tiny, and written in go, less popular than the others here.
+    │       └── pick - 2k sloc minimal fuzzy search tool.
+    └── terminal
+        ├── emulator
+        │   ├── st - the suckless terminal emulator. Tiny, easy to understand, customizable, perfect.
+        │   └── termite - Almost as minimal as st, less hackable, more user-freindly.
+        └── multiplexer
+            ├── dvtm-abduco - better tmux, tiny minimal terminal multiplexing, emulates DWM in the tty.
+            └── tmux - a bit bloated, but ungodly popular.
 programming
+├── build-systems
+│   ├── make - The classic, simple, easy, everyone knows it, bread and butter of suckless.
+│   ├── mk - plan9 replacement of make. Small, minimal, autistic, beautiful.
+│   └── samurai - implimentation of ninja, ultra minimal compiled built tool.
 ├── languages
 │   ├── C - fuck C++
 │   ├── Forth - More powerful and minimal than C, also more dangerous, good for embedded
-│   ├── Python - Good for scripting, not for applications
+│   ├── Go - Fuck python, go is the efficent fast static suckless alternative.
+│   ├── Lua - Good for scripting, not for applications
 │   └── Rust - better C++ alternative
 └── text-manupulation
     ├── core-utils - awk, sed, cat, tail, etc.
     └── python - like I said, scripting. Shell is better but python aint that bad.
 system
-├── core-utils
-│   ├── busybox - tiny versions of many common UNIX utilities into a single small embedded executable
-│   └── plan9-coreutils - The most minimal you can get, everything is only a couple lines of C. Best of the best.
-├── display-server
-│   ├── swc - The smallest display server you will ever get. Wayland compositor in 10k sloc.
-│   └── wlroots - bloat, but nowhere near as bad as Xorg.
-├── init
-│   ├── OpenRC - Bit bloated, but by far the most popular of the init's here.
-│   ├── busybox - busybox has a good minimal embedded init system.
-│   ├── runit - ungodly small init scheme, very powerful
-│   └── sinit - The suckless init system
-├── os
-│   ├── Alpine - A very popular just-works embedded linux build around musl libc and busybox.
-│   ├── Gentoo - The most popular distro here, source based, can be made suckless.
-│   ├── Glaucus - Brand new bleeding-edge linux built round musl libc and toybox.
-│   ├── KISS - Kiss linux is new, decently well known, and ungodly simple. Links hard to find k1sslinux.org
-│   ├── Oasis - manual-bootstrapped, statically compiled incredibly simple source-based linux.
-│   ├── OpenBSD - Very clean codebase, very simple, very secure, smallst kernal
-│   ├── Sabotage - Manual bootstrapped ultraminimal source-based static linux.
-│   ├── minix - The simpelest embedded microkernal os possible, powers the IME in intel chips.
-│   └── plan9 - (or 9front) The most minimal of all, Only use if you are a full autismo.
-└── terminal
-    ├── emulator
-    │   ├── st - the suckless terminal emulator. Tiny, easy to understand, customizable, perfect.
-    │   └── termite - Almost as minimal as st, less hackable, more user-freindly.
-    └── multiplexer
-        ├── dvtm-abduco - better tmux, tiny minimal terminal multiplexing, emulates DWM in the tty.
-        └── tmux - a bit bloated, but ungodly popular.
+├── core
+│   ├── libraries
+│   │   ├── compression
+│   │   │   ├── flate - small gzip compatible compressor lib
+│   │   │   ├── liblzf - very fast, legally unencumbered compression library
+│   │   │   ├── libz - cleaned up, modern fork of zlib.
+│   │   │   ├── lz4 - extremely fast (BSD-licensed) compression algorithm
+│   │   │   ├── lzip - Properly designed data compressor outperforming gzip and bzip2
+│   │   │   ├── miniz - Single C source file Deflate/Inflate compression library
+│   │   │   ├── xz-embedded - lightweight decompressor for the xz LZMA compressor (public domain).
+│   │   │   └── zlib - the "standard" compression/decompression library, quite small
+│   │   └── cryptography
+│   │       ├── TweetNaCl - tiny, fully NaCl-compatible high-security cryptography library (single C file)
+│   │       ├── dropbear - better replacement for OpenSSH.
+│   │       ├── libreSSL - minimal drop-in replacement for (and fork of) OpenSSL.
+│   │       ├── libsodium - encryption/decryption library
+│   │       └── libtomcrypt - public domain cryptography library
+│   └── programs
+│       ├── core-utils
+│       │   ├── busybox - tiny versions of many common UNIX utilities into a single small embedded executable
+│       │   └── plan9-coreutils - The most minimal you can get, everything is only a couple lines of C. Best of the best.
+│       ├── etc
+│       │   └── mandoc - OpenBSD's man page toolchain. Farrr better than gnu's
+│       └── init
+│           ├── OpenRC - Bit bloated, but by far the most popular of the init's here.
+│           ├── busybox - busybox has a good minimal embedded init system.
+│           ├── runit - ungodly small init scheme, very powerful
+│           └── sinit - The suckless init system
+├── gui
+│   ├── display-servers
+│   │   ├── swc - The smallest display server you will ever get. Wayland compositor in 10k sloc.
+│   │   ├── tinyx - The only "minimal" X11 implementation, just under 100k sloc.
+│   │   ├── wlroots - bloat, sucks, but nowhere near as bad as xorg, round 60k sloc.
+│   │   └── xorg - bloat, garbage, dont use this
+│   └── window-managers
+└── os
+    ├── Alpine - A very popular just-works embedded linux build around musl libc and busybox.
+    ├── Gentoo - The most popular distro here, source based, can be made suckless.
+    ├── Glaucus - Brand new bleeding-edge linux built round musl libc and toybox.
+    ├── KISS - Kiss linux is new, decently well known, and ungodly simple. Links hard to find k1sslinux.org
+    ├── Oasis - manual-bootstrapped, statically compiled incredibly simple source-based linux.
+    ├── OpenBSD - Very clean codebase, very simple, very secure, smallst kernal
+    ├── Sabotage - Manual bootstrapped ultraminimal source-based static linux.
+    ├── minix - The simpelest embedded microkernal os possible, powers the IME in intel chips.
+    └── plan9 - (or 9front) The most minimal of all, Only use if you are a full autismo.
