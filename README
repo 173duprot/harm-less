@@ -4,7 +4,7 @@ minimal software and suckless practices.
 
 -- Each Topic is a folder       [TOPIC]
 -- Each tool is a file          [TOOL]
--- Inside each file             ~ <description>
+-- each file is a description
 
 This list is genarated using  tree.sh  on ./wiki
 
