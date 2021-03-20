@@ -5,6 +5,6 @@ Inspired by suckless and cat-v, this is a simple single text document wiki of mi
 -- Each tool is a file          [TOOL]
 -- Inside each file             - <sloc> - <description> - <link>
 
-This list is genarated using ./tree.sh on ./wiki/
+This list is genarated using  tree.sh  on ./wiki
 
 ---------------------------------------------------------------------------------
