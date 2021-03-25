@@ -31,7 +31,7 @@ traverse() {
         dash="-";
     fi
 
-    echo "${prefix}${pointer}${child} ${dash} $(cat "$directory/$child")"
+    echo "${prefix}${pointer}${child} ${dash} $(head -1 "$directory/$child")"
     [ -d "$directory/$child" ] &&
       traverse "$directory/$child" "${prefix}$child_prefix" ||
       file_count=$((file_count + 1))
