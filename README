@@ -2,8 +2,8 @@
 Inspired by suckless and cat-v, this is a simple single text document wiki of
 minimal software and suckless practices.
 
--- Each Topic is a folder       [TOPIC]
--- Each tool is a file          [TOOL]
+-- each Topic is a folder       [TOPIC]
+-- each tool is a file          [TOOL]
 -- each file is a description
 
 This list is genarated using  tree.sh  on ./wiki
