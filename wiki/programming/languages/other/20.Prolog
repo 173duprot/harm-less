@@ -1,0 +1,1 @@
+Also high-level, based in logic, extremely weird and elegent lang as well

@@ -1,0 +1,1 @@
+The ultimate minimal language, don't be afraid to use it.

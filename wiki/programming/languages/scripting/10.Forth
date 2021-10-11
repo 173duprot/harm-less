@@ -1,0 +1,1 @@
+Do I need to say more, forth has any level of abstraction you want.

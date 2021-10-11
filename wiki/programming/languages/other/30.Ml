@@ -1,0 +1,1 @@
+Functional, simple, and based on the Hindley–Milner type system

@@ -10,7 +10,7 @@ This list is genarated using  tree.sh  on ./wiki
 
 ---------------------------------------------------------------------------------
 
-  
+ 
 applications  
 ├── media  
 │   └── torrenting  
@@ -53,10 +53,29 @@ programming
 │   ├── mk - plan9 replacement of make. Small, minimal, autistic, beautiful.
 │   └── samurai - implimentation of ninja, ultra minimal compiled built tool.
 └── languages  
-    ├── C - fuck C++
-    ├── Forth - More powerful and minimal than C, also more dangerous, good for embedded
-    ├── Go - Fuck python, go is the efficent fast static suckless alternative.
-    └── Lua - Good for scripting, not for applications
+    ├── high-level  
+    │   ├── 10.Forth - (Factor && Joy) - The ultimate suckless high-level programming language
+    │   ├── 20.Smalltalk - (Self or maybe Pharo) - God-teir suckless OOP high-level languages.
+    │   ├── 30.Lisp - (scheme) - More user-friendly, and more commonly used, almost as simple as forth.
+    │   ├── 40.Fortran - Not really used anymore, but very simple and minimal
+    │   └── 50.Go - Fuck python, go is the efficient fast compiled, static, suckless alternative.
+    ├── low-level  
+    │   ├── 10.ASM - The ultimate minimal language, don't be afraid to use it.
+    │   ├── 20.Forth - More powerful and minimal than C, can fit in 512 bytes
+    │   ├── 30.Basic - Tinybasic is fuckin nothing at all
+    │   ├── 40.C - fuck C++
+    │   └── 50.Zig - Better designed C, but way less supported.
+    ├── other  
+    │   ├── 10.Apl - A high-level, based in math, extremely weird and incredibly elegant language.
+    │   ├── 20.Prolog - Also high-level, based in logic, extremely weird and elegent lang as well
+    │   └── 30.Ml - Functional, simple, and based on the Hindley–Milner type system
+    └── scripting  
+        ├── 10.Forth - Do I need to say more, forth has any level of abstraction you want.
+        ├── 20.Lisp - (scheme) - Can be implemented in under 3000 lines of C, need i say more.
+        ├── 30.Io - "expressiveness through simplicity"
+        ├── 40.Tcl - Simple syntax leading to some micoscopic implementations
+        ├── 50.Posix_Shell - Sucks balls, but is by far the most portable scripting lang on the planet
+        └── 60.Lua - "Well at least its not python :shrug:"
 resources  
 └── sites  
     ├── cat-v.org - one of the best sites out there for minimal software, close to the most extreme end of the software  minimalisim spectrum
