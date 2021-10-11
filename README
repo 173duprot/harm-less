@@ -56,8 +56,7 @@ programming
     ├── C - fuck C++
     ├── Forth - More powerful and minimal than C, also more dangerous, good for embedded
     ├── Go - Fuck python, go is the efficent fast static suckless alternative.
-    ├── Lua - Good for scripting, not for applications
-    └── Rust - better C++ alternative
+    └── Lua - Good for scripting, not for applications
 resources  
 └── sites  
     ├── cat-v.org - one of the best sites out there for minimal software, close to the most extreme end of the software  minimalisim spectrum
