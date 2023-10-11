@@ -17,7 +17,7 @@ This list is genarated using  tree.sh  on ./wiki
 │   ├── 10.Minix - The simpelest embedded microkernal os possible, powers the IME in intel chips.
 │   ├── 20.plan9 - (or 9front) The most minimal of all, Only use if your use-case allows for it.
 │   ├── 30.Oasis - manual-bootstrapped, statically compiled incredibly simple source-based linux.
-│   ├── 40.OpenBSD - Very clean codebase, very simple, very secure, smallst kernal of the practical OS's.
+│   ├── 40.OpenBSD - Very clean codebase, very simple, very secure, smallest kernel of the practical OS's.
 │   ├── 50.KISS - Kiss linux is new, decently well known, and ungodly simple.
 │   ├── 60.Alpine - A very popular just-works embedded linux build around musl libc and busybox.
 │   ├── 70.Sabotage - Manual bootstrapped ultraminimal source-based static linux.
